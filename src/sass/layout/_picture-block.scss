@@ -1,0 +1,26 @@
+.picture-block {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 45rem;
+    .picture-block__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 10rem;
+        border-radius: 0 0 2rem 2rem;
+        border: 1px solid $color-biege;
+    }
+    .picture-block__image {
+        max-width: 34rem;
+        width: 100%;
+    }
+    .picture-block__title {
+        margin-top: 0.9rem;
+    }
+    .picture-block__description {
+        @extend %font-inter-regular;
+        @include font($color: $color-light-gray, $height: 2rem, $size: 1.6rem);
+        margin-top: 1.4rem;
+    }
+}

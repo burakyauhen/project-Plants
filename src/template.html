@@ -1,20 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon/icon.png">
     <title>Plants</title>
   </head>
   <body>
-    <!-- <p>Файл создан плагином html-webpack-plugin</p>
+    <header class="header">
+      <div class="header__body wrapper">
+        <div class="header__logo logo">
+          <div class="logo__image">
+            <img src="./images/header/logo_vector.png" alt="green-leaf">
+          </div>
+          <div class="logo__text">Plants</div>
+        </div>
+        <div class="heder__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about">About us</a></li>
+            <li class="nav__item"><a class="nav__link" href="#service">Service</a></li>
+            <li class="nav__item"><a class="nav__link" href="#price">Price</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
 
-    <img class="logo1" src="./images/image.png" alt="">
-    <img class="logo2" src="./images/logo.svg" alt=""> -->
+      <section class="welcome">
+        <div class="welcome__body wrapper">
+          <div class="welcome__image"></div>
+          <div class="welcome__main">
+            <h1 class="welcome__title">We grow <span>plants</span> and give you oxygen</h1>
+            <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <button class="welcome__button button-welcome">LEARN MORE</button>
+          </div>
+        </div>
+      </section>
 
+
+      <section class="about" id="about">
+        <div class="about__body wrapper">
+          <div class="about__main">
+            <h2 class="about__title">We are <span>professional <br> experienced</span> gardeners</h2>
+            <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+          </div>
+          <div class="about__image"></div>
+        </div>
+      </section>
+
+      <section class="service" id="service">
+        <div class="service__body wrapper">
+          <div class="service__menu">
+            <h2 class="service__title">Service and our <br> projects</h2>
+            <div class="service__buttons">
+              <button class="service__button button">Gardens</button>
+              <button class="service__button button">Lawn</button>
+              <button class="service__button button">Planting</button>
+            </div>
+          </div>
+          <div class="service__content">
+            <div class="service__picture-block picture-block">
+              <img class="picture-block__image" src="./images/service/one-desktop.png" alt="woman takes pot with aloe">
+              <div class="picture-block__content">
+                <h4 class="picture-block__title">Garden care</h4>
+                <p class="picture-block__description">Lorem Ipsum has been the industry</p>
+              </div>
+            </div>
+            <div class="service__picture-block picture-block">
+              <img class="picture-block__image" src="./images/service/two-desktop.png" alt="hand plucking a lemon from a tree">
+              <div class="picture-block__content">
+                <h4 class="picture-block__title">Planting</h4>
+                <p class="picture-block__description">Lorem Ipsum has been the industry</p>
+              </div>
+            </div>
+            <div class="service__picture-block picture-block">
+              <img class="picture-block__image" src="./images/service/three_desktop.png" alt="gardener spraying plant leaves">
+              <div class="picture-block__content">
+                <h4 class="picture-block__title">Lawn care</h4>
+                <p class="picture-block__description">Lorem Ipsum has been the industry</p>
+              </div>
+            </div>
+            <div class="service__picture-block picture-block">
+              <img class="picture-block__image" src="./images/service/four_desktop.png" alt="girl stands near the table with flowers in pots">
+              <div class="picture-block__content">
+                <h4 class="picture-block__title">Planting</h4>
+                <p class="picture-block__description">Lorem Ipsum has been the industry</p>
+              </div>
+            </div>
+            <div class="service__picture-block picture-block">
+              <img class="picture-block__image" src="./images/service/five_desktop.png" alt="hands with book and plants in pots">
+              <div class="picture-block__content">
+                <h4 class="picture-block__title">Garden care</h4>
+                <p class="picture-block__description">Lorem Ipsum has been the industry</p>
+              </div>
+            </div>
+              <div class="service__picture-block picture-block">
+              <img class="picture-block__image" src="./images/service/six_desktop.png" alt="hands transplanting cacti in a pot">
+              <div class="picture-block__content">
+                <h4 class="picture-block__title">Planting</h4>
+                <p class="picture-block__description">Lorem Ipsum has been the industry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices" id="price">
+        <div class="prices__body wrapper">
+          <div class="prices__content">
+            <h3 class="prices__title-one">Prices</h3>
+            <div class="prices__menu">
+              <div class="dropdown-button">
+                <div class="dropdown-button__content">
+                  <h4 class="dropdown-button__title">Basics</h4>
+                  <img src="./images/prices/accordion_btn.png" alt="spinning circle with arrow">
+                </div>
+              </div>
+              <div class="dropdown-button">
+                <div class="dropdown-button__content">
+                  <h4 class="dropdown-button__title">Standard</h4>
+                  <img src="./images/prices/accordion_btn.png" alt="spinning circle with arrow">
+                </div>
+              </div>
+              <div class="dropdown-button">
+                <div class="dropdown-button__content">
+                  <h4 class="dropdown-button__title">Pro care</h4>
+                  <img src="./images/prices/accordion_btn.png" alt="spinning circle with arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prices__link-block">
+            <h3 class="prices__title-two">Our best <span>gardeners</span> are ready to help you</h3>
+            <button class="prices-button button">Contact us</button>
+            <div class="prices__image"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us" id="contacts">
+        <div class="contact-us__body wrapper">
+          <img class="contact-us__image" src="./images/contact-us/contact_woman.svg" alt="">
+          <div class="contact-us__content">
+            <h2 class="contact-us__title">Contact us</h2>
+            <div class="contact-us__botton">
+              <div class="contact-us__button-content">
+                <p class="contact-us__button-name">City</p>
+                <img class="contact-us__button-image" src="./images/contact-us/accordion_btn.png" alt="spinning circle with arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
+    </main>
 
-
-
-
+    <footer class="footer">
+      <div class="footer__body wrapper">
+        <div class="footer__github"><span>©</span><span>2023</span><span><a href="https://github.com/burakyauhen">github</a></span></div>
+        <div class="footer__rss"><a href="https://rs.school/">Rolling Scopes School</a></div>
+        <div class="footer__social-media">
+          <a href="https://www.instagram.com/"><div class="footer__instagram"></div></a>
+          <a href="https://web.facebook.com/"><div class="footer__facebook"></div></a>
+          <a href="https://twitter.com"><div class="footer__twitter"></div></a>
+          <a href="https://www.pinterest.com/"><div class="footer__pinterest"></div></a>
+        </div>
+      </div>
+    </footer>
 
 
 

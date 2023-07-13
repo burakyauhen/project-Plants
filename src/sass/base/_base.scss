@@ -1,0 +1,52 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+};
+
+body {
+    max-width: 144rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @extend %font-inter;
+    @include font($color: $color-light-gray, $height: 5rem, $size: 4.5rem); 
+}
+
+h2 {
+    @extend %font-inika-regular;
+    @include font($color: $color-green, $height: normal, $size: 4rem);  
+}
+
+h3 {
+    @extend %font-inter;
+    @include font($color: $color-black, $height: normal, $size: 4rem);
+}
+
+h4 {
+    @extend %font-inter;
+    @include font($color: $color-orange, $height: 2rem, $size: 2rem);
+}
+
+.wrapper {
+    max-width: calc(122 / 144) * 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+

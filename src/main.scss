@@ -1,15 +1,27 @@
-// $font-size: 1rem;
-// $font-color: lch(28 99 35);
 
-// html {
-//   font-family: "Roboto";
-//   font-size: $font-size;
-//   color: $font-color;
-// }
+//abstracts
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/placeholders";
+@import "./sass/abstracts/mixins";
 
-// .logo1 {
-//     width: 10em;
-//   }
-//   .logo2 {
-//     width: 10em;
-//   }
+//base
+// @import "./sass/base/normolize";
+@import "./sass/base/base";
+
+//components
+@import "./sass/components/buttons";
+
+//layout
+@import "./sass/layout/header";
+@import "./sass/layout/welcome";
+@import "./sass/layout/about";
+@import "./sass/layout/service";
+@import "./sass/layout/prices";
+@import "./sass/layout/contact-us";
+@import "./sass/layout/footer";
+@import "./sass/layout/navigation";
+@import "./sass/layout/picture-block"
+
+
+
+

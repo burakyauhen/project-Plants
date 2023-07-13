@@ -1,0 +1,58 @@
+.footer {
+    display: flex;
+    align-items: center;
+    height: 13rem;
+    background-color: $color-white;
+    .footer__body{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 5rem;
+    }
+    .footer__github {
+        @extend %font-inter-regular;
+        @include font($color: $color-black, $height: 5rem, $size: 2rem);
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        max-width: 16.9rem;
+        width: 100%;
+        a {
+            color: $color-black;
+            text-decoration: none;
+        }
+    }
+    .footer__rss {
+        @extend %font-inter-regular;
+        @include font($color: $color-black, $height: 5rem, $size: 2rem);
+        align-self: center;
+        margin-left: 2rem;;
+        a {
+            color: $color-black;
+            text-decoration: none; 
+        }
+    }
+    .footer__social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 18.8rem;
+        width: 100%;
+    }
+    .footer__instagram {
+        @extend %media-link;
+        background-image: url("./images/footer/inst.svg");
+    }
+    .footer__facebook {
+        @extend %media-link;
+        background-image: url("./images/footer/fb.svg");
+    }
+    .footer__twitter {
+        @extend %media-link;
+        background-image: url("./images/footer/tw.svg");
+    }
+    .footer__pinterest {
+        @extend %media-link;
+        background-image: url("./images/footer/pinterest.svg");
+    }
+}

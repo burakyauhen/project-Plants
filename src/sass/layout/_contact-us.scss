@@ -1,0 +1,54 @@
+.contact-us {
+    display: flex;
+    align-items:flex-end;
+    height: 55rem;
+    background-color: $color-green-light;
+    .contact-us__body {
+        display: flex;
+        justify-content: space-between;
+        height: 49.7rem;
+    }
+    .contact-us__image {
+        align-self: flex-end;
+        max-width: 40rem;
+        min-width: 30rem;
+        width: 100%;
+    }
+    .contact-us__content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 70.9rem;
+        min-width: 60rem;
+        width: 100%;
+        height: 13.8rem;
+        margin-top: 0.8rem;
+    }
+    .contact-us__title {
+        min-width: 19.5rem;
+        @extend %font-inika;
+    }
+    .contact-us__botton{
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        max-width: 45rem;
+        min-width: 40rem;
+        width: 100%;
+        height: 5rem; 
+        background: $color-midle-green;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .contact-us__button-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 2rem;
+        max-width: 39.5rem;
+        width: 100%;
+    }
+    .contact-us__button-name {
+        @extend %font-inter-regular;
+        @include font($color: $color-light-gray, $height: 4rem, $size: 2rem);
+        letter-spacing: 1px;
+    }
+}

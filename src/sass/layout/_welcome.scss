@@ -1,0 +1,40 @@
+.welcome {
+    display: flex;
+    align-items: center;
+    height: 53.2rem;
+    background-color: $color-green-light;
+    .welcome__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .welcome__image {
+        max-width: 46.3rem;
+        width: 100%;
+        height: 44.8rem;
+        margin-top: -0.5rem;
+        margin-left: -1.1rem;
+        background-image: url("./images/welcome/leafs.svg");
+        background-position: center;
+        background-size: 100%100%;
+     }
+    .welcome__main {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+        max-width: 54.9rem;
+        min-height: 34rem;
+        height: auto;
+        width: 100%;
+    }
+    .welcome__title {
+        span {
+            color: $color-green;
+        }
+    }
+    .welcome__text {
+        @extend %font-inter-regular;
+        @include font($color: $color-light-gray, $height: 3.5rem, $size: 2rem);
+    }
+}
+

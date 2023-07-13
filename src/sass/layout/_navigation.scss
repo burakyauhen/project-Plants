@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    max-width: calc((452 / 1222) * 100%);
+    min-width: 40rem;
+    width: 100%;
+    .nav__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .nav__item {
+        list-style: none;
+    }
+    .nav__link {
+        text-decoration: none;
+        @extend %font-inika-regular;
+        @include font($color: $color-black, $height: 5rem, $size: 1.6rem);
+        &:hover {
+            color: $color-orange;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 13.5rem;
+    background-color: $color-green-light;
+    .header__body {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 7.92rem;
+    width: 100%;
+    .logo__text {
+        @extend %font-inika-regular;
+        @include font($color: $color-black, $size: 1.6rem, $height: normal);
+    } 
+    .logo__image {
+        margin-bottom: 1rem;
+    }
+}
+
