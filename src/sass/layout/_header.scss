@@ -3,6 +3,9 @@
     align-items: center;
     height: 13.5rem;
     background-color: $color-green-light;
+    @include media-laptop {
+        height: 11.7rem;
+    }
     .header__body {
         display: flex;
         justify-content: space-between;

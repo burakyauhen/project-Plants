@@ -27,16 +27,25 @@ p {
 h1 {
     @extend %font-inter;
     @include font($color: $color-light-gray, $height: 5rem, $size: 4.5rem); 
+    @include media-laptop {
+        @include font($color: $color-light-gray, $height: 5rem, $size: 3.5rem); 
+    }
 }
 
 h2 {
     @extend %font-inika-regular;
     @include font($color: $color-green, $height: normal, $size: 4rem);  
+    @include media-laptop {
+        @include font($color: $color-green, $height: normal, $size: 3.5rem);  
+    }
 }
 
 h3 {
     @extend %font-inter;
     @include font($color: $color-black, $height: normal, $size: 4rem);
+    @include media-laptop {
+        @include font ($color: $color-black, $height: normal, $size: 3.5rem);
+    }
 }
 
 h4 {
@@ -48,5 +57,9 @@ h4 {
     max-width: calc(122 / 144) * 100%;
     width: 100%;
     margin: 0 auto;
+    @include media-laptop {
+        max-width: calc(668 / 768) * 100%;
+    }
+   
 }
 

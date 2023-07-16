@@ -1,7 +1,6 @@
 .picture-block {
     display: flex;
     flex-direction: column;
-    justify-self: center;
     height: 45rem;
     .picture-block__content {
         display: flex;
@@ -10,6 +9,8 @@
         height: 10rem;
         border-radius: 0 0 2rem 2rem;
         border: 1px solid $color-biege;
+        border-top: none;
+        
     }
     .picture-block__image {
         max-width: 34rem;
@@ -22,5 +23,10 @@
         @extend %font-inter-regular;
         @include font($color: $color-light-gray, $height: 2rem, $size: 1.6rem);
         margin-top: 1.4rem;
+        @include media-laptop {
+            text-align: center;
+            max-width: 20.3rem;
+            margin-top: 0.9rem;
+        }
     }
 }

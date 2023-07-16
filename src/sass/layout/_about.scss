@@ -3,11 +3,20 @@
     align-items: center;
     height: 66.6rem;
     background-color: $color-white;
+    @include media-laptop {
+        height: 78.3rem;
+        align-items: flex-start;
+    }
     .about__body {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 5rem;
+        @include media-laptop {
+            flex-direction: column;
+            height: 65.2rem;
+            margin-top: 3.6rem;
+        }
     }
     .about__image {
         max-width: 46.4rem;
@@ -15,6 +24,10 @@
         height: 47.9rem;
         background-image: url("./images/about/houseplant_1.svg");
         background-size: 100%100%;
+        @include media-laptop {
+            max-width: 25rem;
+            height: 25.8rem;
+        }
     }
     .about__main {
         display: flex;
@@ -24,11 +37,19 @@
         width: 100%;
         min-height: 35.8rem;
         height: auto;
+        @include media-laptop {
+            max-width: 66.8rem;
+            height: 32.5rem;
+            min-height: 32.5rem;
+        }
     }
     .about__title {
         margin-top: 0.4rem;
         span {
            color: $color-orange; 
+        }
+        @include media-laptop {
+            text-align: center;
         }
     }
     .about__text {

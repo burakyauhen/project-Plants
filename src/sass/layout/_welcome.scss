@@ -3,6 +3,11 @@
     align-items: center;
     height: 53.2rem;
     background-color: $color-green-light;
+    @include media-laptop {
+        align-items: flex-start;
+        padding-top: 4rem;;
+        height: 42rem;
+    }
     .welcome__body {
         display: flex;
         justify-content: space-between;
@@ -17,6 +22,13 @@
         background-image: url("./images/welcome/leafs.svg");
         background-position: center;
         background-size: 100%100%;
+        @include media-laptop {
+            order: 1;
+            align-self: flex-start;
+            max-width: 29rem;
+            height: 26.4rem;
+            margin-left: 0rem;
+        }
      }
     .welcome__main {
        display: flex;
@@ -26,6 +38,10 @@
         min-height: 34rem;
         height: auto;
         width: 100%;
+        @include media-laptop{
+            max-width: 34.6rem;
+            min-height: 31rem;
+        }
     }
     .welcome__title {
         span {
@@ -35,6 +51,10 @@
     .welcome__text {
         @extend %font-inter-regular;
         @include font($color: $color-light-gray, $height: 3.5rem, $size: 2rem);
+        @include media-laptop {
+            @include font($color: $color-light-gray, $height: 2.5rem, $size: 1.6rem);
+            margin-left: 0.5rem;
+        }
     }
 }
 
