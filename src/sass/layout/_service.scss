@@ -4,6 +4,9 @@
     @include media-laptop {
         height: 178rem;
     }
+    @include media-mobile {
+        height: 315rem;
+    }
     .service__body {
         display: flex;
         flex-direction: column;
@@ -26,6 +29,10 @@
             height: 18.4rem;
             margin-top: 5.9rem;
         }
+        @include media-mobile {
+            margin-top: 3rem;
+
+        }
     }
     .service__buttons {
         display: flex;
@@ -33,6 +40,12 @@
         align-items: center;
         max-width: 55.9rem;
         width: 100%;
+        @include media-mobilesmall {
+            max-width: 25.2rem;
+            flex-wrap: wrap;
+            height: 7.9rem;
+            align-content: space-between;
+        }
     }
     .service__content {
         display: grid;
@@ -53,6 +66,11 @@
             justify-content: space-between;
             height: 142.8rem;
             margin-top: 4rem;
+        }
+        @include media-mobile {
+            grid-template-columns: minmax(25rem, 28rem);
+            justify-content: center;
+            gap: 3.4rem
         }
     }
 }

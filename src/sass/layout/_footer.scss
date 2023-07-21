@@ -8,6 +8,10 @@
         height: 18.1rem;
         padding-top: 3.3rem;
     }
+    @include media-mobile {
+        height: 14.6rem;
+        padding-top: 2.2rem;
+    }
     .footer__body{
         display: flex;
         justify-content: space-between;
@@ -17,6 +21,9 @@
             flex-direction: column;
             align-items: center;
             height: 12.1rem;
+        }
+        @include media-mobile {
+            height: 10.8rem;
         }
     }
     .footer__github {
@@ -30,6 +37,9 @@
         @include media-laptop {
             line-height: normal;
             margin-bottom: -0.7rem;
+        }
+        @include media-mobile {
+            margin-bottom: 0.3rem;
         }
         a {
             color: $color-black;

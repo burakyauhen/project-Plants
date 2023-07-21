@@ -2,21 +2,32 @@
     @extend %font-inter-regular;
     @include font($color: $color-black, $height: 2rem, $size: 1.6rem);
     text-align: center;
-    max-width: 158px;
+    max-width: 15.8rem;
     width: 100%;
-    height: 44px;
-    border-radius: 10px;
-    border: 2px solid #E06733;
+    height: 4.4rem;
+    border-radius: 1rem;
+    border: 0.2rem solid #E06733;
+    @include media-mobile {
+        @include font($color: $color-black, $height: 2rem, $size: 1rem);
+        max-width: 10rem;
+        height: 3.4rem;
+    }
 }
 
 
 .button {
     @extend %font-inika-regular;
     @include font($color: $color-orange, $height: normal, $size: 2rem);
-    width: 161px;
-    height: 50px;
-    border-radius: 5px;
+    width: 16.1rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    background-color: inherit;
     border: 1px solid $color-orange;
+    @include media-mobile {
+        @include font($color: $color-orange, $height: normal, $size: 1.5rem);
+        width: 12.1rem;
+        height: 3.5rem; 
+    }
 }
 
 .dropdown-button {
@@ -25,17 +36,29 @@
     max-width: 25rem;
     width: 100%;
     height: 5rem;
-    border-radius: 20px;
+    border-radius: 2rem;
     background: $color-green-light;
+    @include media-mobile {
+        max-width: 18rem;
+        justify-content: flex-start;
+        padding-left: 3rem;
+
+    }
     .dropdown-button__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         max-width: 17.2rem;
         width: 100%;
+        @include media-mobile {
+            max-width: 11rem;
+        }
     }
     .dropdown-button__title {
         @extend %font-inter;
         @include font($color: $color-black, $height: 2rem, $size: 2rem);
+        @include media-mobile {
+            @include font($color: $color-black, $height: 2rem, $size: 1.5rem);
+        }
     }
 }

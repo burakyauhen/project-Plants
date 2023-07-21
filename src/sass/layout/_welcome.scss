@@ -8,6 +8,11 @@
         padding-top: 4rem;;
         height: 42rem;
     }
+    @include media-mobile {
+        height: 30rem;
+        padding-top: 2.6rem;;
+
+    }
     .welcome__body {
         display: flex;
         justify-content: space-between;
@@ -29,6 +34,9 @@
             height: 26.4rem;
             margin-left: 0rem;
         }
+        @include media-mobile {
+            display: none;
+        }
      }
     .welcome__main {
        display: flex;
@@ -42,6 +50,10 @@
             max-width: 34.6rem;
             min-height: 31rem;
         }
+        @include media-mobile {
+            max-width: 44.6rem;
+            min-height: 25rem;
+        }
     }
     .welcome__title {
         span {
@@ -54,6 +66,9 @@
         @include media-laptop {
             @include font($color: $color-light-gray, $height: 2.5rem, $size: 1.6rem);
             margin-left: 0.5rem;
+        }
+        @include media-mobile {
+            margin-left: 0;
         }
     }
 }

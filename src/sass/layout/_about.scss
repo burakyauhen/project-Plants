@@ -7,6 +7,9 @@
         height: 78.3rem;
         align-items: flex-start;
     }
+    @include media-mobile {
+        height: 51.6rem;
+    }
     .about__body {
         display: flex;
         justify-content: space-between;
@@ -14,8 +17,16 @@
         gap: 5rem;
         @include media-laptop {
             flex-direction: column;
-            height: 65.2rem;
+            gap: 0;
+            height: 74rem;
             margin-top: 3.6rem;
+        }
+        @include media-tablet {
+            height: 65.2rem;
+        }
+        @include media-mobile {
+            height: 46.5rem;
+            margin-top: 2.5rem;
         }
     }
     .about__image {
@@ -24,9 +35,13 @@
         height: 47.9rem;
         background-image: url("./images/about/houseplant_1.svg");
         background-size: 100%100%;
-        @include media-laptop {
+        @include media-tablet {
             max-width: 25rem;
             height: 25.8rem;
+        }
+        @include media-mobile {
+            max-width: 15rem;
+            height: 15.8rem;
         }
     }
     .about__main {
@@ -38,9 +53,15 @@
         min-height: 35.8rem;
         height: auto;
         @include media-laptop {
-            max-width: 66.8rem;
-            height: 32.5rem;
-            min-height: 32.5rem;
+            max-width: 96.8rem;
+            height: 32.6rem;
+            min-height: 26.5rem;
+        }
+        @include media-mobile {
+            height:24rem;
+        }
+        @include media-mobilesmall {
+            height:31.2rem;
         }
     }
     .about__title {
@@ -51,10 +72,16 @@
         @include media-laptop {
             text-align: center;
         }
+        @include media-mobilesmall {
+            margin-top: 0.6rem;  
+        }
     }
     .about__text {
         @extend %font-inter-regular;
-        @include font($color: $color-gray, $height: 3rem, $size: 2rem)
+        @include font($color: $color-gray, $height: 3rem, $size: 2rem);
+        @include media-mobile {
+            @include font($color: $color-gray, $height: 2.5rem, $size: 1.5rem);
+        }
     }
 }
 

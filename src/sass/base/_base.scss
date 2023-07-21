@@ -30,6 +30,9 @@ h1 {
     @include media-laptop {
         @include font($color: $color-light-gray, $height: 5rem, $size: 3.5rem); 
     }
+    @include media-mobilesmall {
+        @include font($color: $color-light-gray, $height: 3.5rem, $size: 2.5rem); 
+    }
 }
 
 h2 {
@@ -38,6 +41,9 @@ h2 {
     @include media-laptop {
         @include font($color: $color-green, $height: normal, $size: 3.5rem);  
     }
+    @include media-mobile {
+        @include font($color: $color-green, $height: normal, $size: 2.5rem);  
+    }
 }
 
 h3 {
@@ -45,6 +51,9 @@ h3 {
     @include font($color: $color-black, $height: normal, $size: 4rem);
     @include media-laptop {
         @include font ($color: $color-black, $height: normal, $size: 3.5rem);
+    }
+    @include media-mobile {
+        @include font ($color: $color-black, $height: normal, $size: 2.5rem);
     }
 }
 
@@ -59,6 +68,9 @@ h4 {
     margin: 0 auto;
     @include media-laptop {
         max-width: calc(668 / 768) * 100%;
+    }
+    @include media-mobile {
+        max-width: calc(330 / 380) * 100%;
     }
    
 }

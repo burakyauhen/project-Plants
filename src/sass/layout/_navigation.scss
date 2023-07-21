@@ -2,6 +2,9 @@
     display: flex;
     max-width: 45.2rem;
     width: 100%;
+    @include media-mobile {
+        display: none;
+    }
     .nav__list {
         display: flex;
         justify-content: space-between;

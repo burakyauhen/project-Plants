@@ -6,11 +6,26 @@
     @include media-laptop {
         height: 11.7rem;
     }
+    @include media-mobile {
+        height: 9.6rem;
+    }
     .header__body {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         height: 5rem;
+
     }
+    .header__burger {
+        display: none;
+        width: 4rem;
+        height: 2.6rem;
+        background-image: url('./images/header/burger.svg');
+        @include media-mobile {
+            display: block;
+        }
+    }
+
 }
 .logo {
     display: flex;

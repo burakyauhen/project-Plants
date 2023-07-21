@@ -1,15 +1,25 @@
 .prices {
     background-color: $color-white;
     height: 55.7rem;
+    padding-top: 3.7rem;
     @include media-laptop {
         height: 58.5rem;
-        padding-top: 3.6rem;
+        // padding-top: 3.6rem;
+    }
+    @include media-mobile {
+        height: 51.2rem;
+        padding-top: 2.5rem;
     }
     .prices__body {
         display: flex;
         justify-content: space-between;
         @include media-laptop {
             height: 45.7rem;
+        }
+        @include media-mobile {
+            flex-direction: column;
+            align-items: center;
+            height: 44.7rem;
         }
     }
     .prices__content {
@@ -22,10 +32,17 @@
         @include media-laptop {
             height: 38.5rem;
         }
+        @include media-mobile {
+            align-items: center;
+            height: 30.2rem;
+        }
         .prices__title-one {
             @include media-laptop {
                 margin-left: 1.3rem;
             }  
+            @include media-mobile {
+                margin-left: 0;
+            }
         }
     }
     .prices__menu {
@@ -38,6 +55,12 @@
         height: 28.2rem;
         border-radius: 20px;
         border: 1px solid $color-biege;
+        @include media-mobile {
+            justify-content: center;
+            gap: 1.4rem;
+            height: 23.5rem;
+            max-width: 22.2rem;
+        }
     }
     .prices__link-block {
         display: flex;
@@ -51,12 +74,22 @@
             height: 35.3rem;
             align-self: flex-end;
         }
+        @include media-mobile {
+            align-self: center;
+            align-items: center;
+            height: 12.6rem;
+            width: 80%;
+        }
     }
     .prices__title-two {
         text-align: right;
         @include media-laptop {
             font-size: 2.5rem;
             line-height: 3.5rem;
+        }
+        @include media-mobile {
+            text-align: center;
+            font-size: 2rem;
         }
         span {
             color: $color-green;
@@ -68,5 +101,8 @@
         height: 16.7rem;
         background-image: url("./images/prices/leafs_small.svg");
         background-position: center;
+        @include media-mobile {
+            display: none;
+        }
     }
 }
