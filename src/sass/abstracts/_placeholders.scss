@@ -27,5 +27,9 @@
     height: 3.2rem;
     cursor: pointer;
     background-size: cover;
+    transition: 0.2s;
+    &:hover {
+        scale: 1.2;
+    }
 }
 
