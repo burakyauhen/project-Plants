@@ -72,6 +72,12 @@
             justify-content: center;
             gap: 3.4rem
         }
+        .service__picture-block {
+            transition: 0.2s;
+            &_blured {
+                filter: blur(1rem);
+            }
+        }
     }
 }
 

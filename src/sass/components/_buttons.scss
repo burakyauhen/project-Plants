@@ -25,11 +25,13 @@
 .button {
     @extend %font-inika-regular;
     @include font($color: $color-orange, $height: normal, $size: 2rem);
+    position: relative;
     width: 16.1rem;
     height: 5rem;
     border-radius: 0.5rem;
     background-color: transparent;
     border: 1px solid $color-orange;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
     cursor: pointer;
     transition: 0.2s;
     &:hover {
@@ -41,6 +43,13 @@
         width: 12.1rem;
         height: 3.5rem; 
     }
+}
+.button_active {
+    background-color: $color-orange;
+    color: $color-white;
+    filter: drop-shadow(0 0 0);
+    // top: 0.1rem;
+    // left: 
 }
 
 .dropdown-button {
