@@ -135,7 +135,7 @@
         span {
             @extend %font-inter;
             @include font($color: $color-orange, $height: 2rem, $size: 1.6rem);
-        };
+        }
     }
 }
 
@@ -151,5 +151,4 @@
     border: 0rem;
     background: $color-white;
     color: $color-light-gray;
-    
 }

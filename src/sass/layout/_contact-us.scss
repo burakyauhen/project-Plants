@@ -38,27 +38,29 @@
             min-width: 5rem;
             margin-left: 0;
         }
+        &_hidden {
+            display: none;
+        }
     }
     .contact-us__content {
         display: flex;
         justify-content: space-between;
         max-width: 70.9rem;
-        // min-width: 60rem;
         width: 100%;
-        height: 13.8rem;
+        height: 40rem;
         margin-top: 0.8rem;
         @include media-laptop {
             flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
             order: -1;
             max-width: 45rem;
-            height: 20.1rem;
+            height: 45.1rem;
             margin-top: 0;
+        }
         @include media-mobile {
             height: 16.4rem;
         }
-        }
-
     }
     .contact-us__title {
         min-width: 19.5rem;
@@ -71,36 +73,123 @@
             font-size: 2.5rem;
         }
     }
-    .contact-us__botton{
-        align-self: flex-end;
+    .contact-us__menu {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
         max-width: 45rem;
-        min-width: 40rem;
         width: 100%;
-        height: 5rem; 
+        gap: 4rem;
+    }
+    .contact-us__botton{
+        width: 100%;
+        height: 5rem;
+        margin-top: 8.7rem;
         background: $color-midle-green;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        transition: 0.2s;
+        &_opened {
+            height: 24rem;
+        }
         @include media-laptop {
             align-self: center;
+            margin-top: 9.7rem;
         }
         @include media-mobile {
+            margin-top: 8rem;
             max-width: 30rem;
             min-width: 25rem;
-
         }
     }
     .contact-us__button-content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 2rem;
-        max-width: 39.5rem;
         width: 100%;
+        height: 5rem;
+        padding: 0 1.6rem;
+        transition: 0.2s;
+        &_active {
+            background-color: $color-green-contact-active;
+        }
     }
     .contact-us__button-name {
         @extend %font-inter-regular;
         @include font($color: $color-light-gray, $height: 4rem, $size: 2rem);
         letter-spacing: 1px;
+    }
+    .contact-us__button-image {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-right: 1.3rem;
+        background-image: url('./images/contact-us/accordion_btn.png');
+        background-size: cover;
+        transition: 0.2s;
+        &_active {
+            background-image: url('./images/contact-us/drop_btn-active.png');
+        }
+    }
+    .contact-us__city-list {
+        height: 0;
+        list-style: none;
+        width: 90%;
+        margin-left: 2rem;
+    }
+    .contact-us__city-item {
+        @extend %font-inter-regular;
+        @include font($color: $color-green, $height: 4rem, $size: 1.6rem);
+        letter-spacing: 0.08rem;
+        border-bottom: 1px solid $color-middle-gray;
+        cursor: pointer;
+        &:hover {
+            color: $color-light-gray;
+            border-color: $color-light-gray;
+        }
+    }
+    .contact-us__adress-form {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 44.8rem;
+        height: 21.4rem;
+        width: 100%;
+        padding-top: 2rem;
+        border: 1px solid $color-black;
+        border-radius: 20px;
+        @include media-mobile {
+            height: 21.2rem;
+        }
+    }
+    .contact-us__form-keys {
+        width: 40%;
+        padding-left: 2rem;
+    }
+    .contact-us__form-values {
+        width: 60%;
+        padding-left: 2rem;
+    }
+    .contact-us__keys {
+        @extend %font-inter-regular;
+        @include font($color: $color-black, $height: 4rem, $size: 1.6rem);
+        letter-spacing: 0.8px;
+    }
+    .contact-us__values {
+        @extend %font-inter-regular;
+        @include font($color: $color-light-gray, $height: 4rem, $size: 1.6rem);
+        letter-spacing: 0.8px;
+    }
+    .contact-us__form-button {
+        @extend %font-inika;
+        @include font($color: $color-light-gray, $height: normal, $size: 1rem);
+          
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none; 
+        padding-top: 0.5rem;     
+        margin: 0 auto;
+        width: 12.2rem;
+        height: 2.6rem;
+        border-radius: 5px;
+        border: 1px solid $color-orange;
     }
 }
