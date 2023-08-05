@@ -5,7 +5,7 @@
 @import "./sass/abstracts/mixins";
 
 //base
-// @import "./sass/base/normolize";
+@import "./sass/base/normolize";
 @import "./sass/base/base";
 
 //components
@@ -20,8 +20,5 @@
 @import "./sass/layout/contact-us";
 @import "./sass/layout/footer";
 @import "./sass/layout/navigation";
-@import "./sass/layout/picture-block"
-
-
-
-
+@import "./sass/layout/picture-block";
+@import "./sass/layout/pop-up"

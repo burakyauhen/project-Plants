@@ -13,6 +13,10 @@ body {
     margin: 0 auto;
 }
 
+.none-scroled {
+    overflow: hidden;
+}
+
 ul,
 li,
 h1,
@@ -72,6 +76,4 @@ h4 {
     @include media-mobile {
         max-width: calc(330 / 380) * 100%;
     }
-   
 }
-

@@ -2,14 +2,30 @@
     display: flex;
     max-width: 45.2rem;
     width: 100%;
+    z-index: 2;
+    transition: 0.5s;
     @include media-mobile {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -200rem;
+        height: 100%;
+        width: 50%;
+        background-color: $color-green-light;
+    }
+    &_active {
+        right: 0;
+
     }
     .nav__list {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        @include media-mobile {
+            flex-direction: column;
+            align-self: center;
+            height: 40%;
+        }
     }
     .nav__item {
         list-style: none;
@@ -20,6 +36,9 @@
         @include font($color: $color-black, $height: 5rem, $size: 1.6rem);
         &:hover {
             color: $color-orange;
+        }
+        @include media-mobile {
+            @include font($color: $color-light-gray, $height: 5rem, $size: 3.6rem);
         }
     }
 }

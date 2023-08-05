@@ -14,18 +14,21 @@
         justify-content: space-between;
         align-items: center;
         height: 5rem;
-
     }
     .header__burger {
         display: none;
         width: 4rem;
         height: 2.6rem;
+        z-index: 3;
         background-image: url('./images/header/burger.svg');
+        transition: 0.2s;
         @include media-mobile {
             display: block;
         }
+        &_rotated {
+            rotate: 90deg;
+        }
     }
-
 }
 .logo {
     display: flex;
@@ -40,4 +43,3 @@
         margin-bottom: 1rem;
     }
 }
-

@@ -1,17 +1,44 @@
 import './main.scss';
 import './fonts/fonts.scss';
-// import './template.html';
-// import './images/welcome/leafs.svg'
 import { Service } from './ts/Service';
 import { Price } from './ts/Price';
 import { Contact } from './ts/Contact';
-
+import { Menu } from './ts/Menu';
 
 window.onload = function() {
     serviceButtons?.addEventListener('click', handlerServiceButtonsSelect);
     pricesMenu?.addEventListener('click', handlerPricesButtonsSelect);
     contactButton?.addEventListener('click', handlerContactButtonSelect);
+    headerBurger?.addEventListener('click', handlerHeaderBurgerSelect);
+    navList?.addEventListener('click', handlerNavListSelect);
+    popUp?.addEventListener('click', handlerPopUpSelect);
 }
+
+// Hamburger menu 
+//**********************************
+const menu = new Menu();
+const headerBurger = document.querySelector('.header__burger');
+const navList = document.querySelector('.nav__list');
+const popUp = document.querySelector('.pop-up');
+
+const handlerHeaderBurgerSelect = (event: Event) => {
+   if (menu.menuOpened === false) {
+    menu.openMenu();
+   } else {
+    menu.closeMenu();
+   }
+} 
+
+const handlerNavListSelect = (event: Event) => {
+    const button = (event.target as HTMLDataListElement).closest('.nav__item');
+    if (!button) return;
+    menu.closeMenu();
+}
+
+const handlerPopUpSelect = (event: Event) => {
+    menu.closeMenu();
+}
+//**********************************
 
 
 //Serivce block
@@ -40,6 +67,7 @@ const handlerPricesButtonsSelect = (event: Event) => {
     } 
 }
 //********************************** 
+
 
 //Contact block
 //********************************** 
@@ -84,5 +112,4 @@ const handlerContactButtonSelect = (event: Event) => {
         contact.pushContactButton(contactButton as HTMLButtonElement);
     }
 }
-
 //********************************** 
